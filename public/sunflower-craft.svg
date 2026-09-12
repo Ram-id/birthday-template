@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF9" />
+      <stop offset="60%" stop-color="#FDF6EB" />
+      <stop offset="100%" stop-color="#F5E8D3" />
+    </radialGradient>
+
+    <!-- Fuzzy Pipe Cleaner Texture Effect -->
+    <filter id="fuzzy" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3.5" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Brown Seed Core Gradient -->
+    <radialGradient id="coreGradient" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#6B3E11" />
+      <stop offset="45%" stop-color="#4A2800" />
+      <stop offset="85%" stop-color="#301A03" />
+      <stop offset="100%" stop-color="#1F1000" />
+    </radialGradient>
+
+    <!-- Sunflower Yellow Petal Gradient -->
+    <linearGradient id="petalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE053" />
+      <stop offset="50%" stop-color="#FDB014" />
+      <stop offset="100%" stop-color="#E88C00" />
+    </linearGradient>
+
+    <!-- Green Stem & Leaves Gradient -->
+    <linearGradient id="stemGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A7C38" />
+      <stop offset="50%" stop-color="#67A04D" />
+      <stop offset="100%" stop-color="#3D662D" />
+    </linearGradient>
+
+    <!-- Craft Paper Wrapping Gradient -->
+    <linearGradient id="craftPaper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DEC49F" />
+      <stop offset="50%" stop-color="#CBB089" />
+      <stop offset="100%" stop-color="#B89B73" />
+    </linearGradient>
+
+    <!-- Ribbon Gradient -->
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FBEBEB" />
+      <stop offset="100%" stop-color="#F5D0D5" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#846237" flood-opacity="0.22" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="100%" height="100%" fill="url(#bgGlow)" rx="24" />
+
+  <!-- Subtle Vintage Grid/Dots -->
+  <g opacity="0.12">
+    <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#7C5E43" />
+    </pattern>
+    <rect width="100%" height="100%" fill="url(#dotPattern)" rx="24" />
+  </g>
+
+  <!-- Sunlight Aura Glow -->
+  <circle cx="250" cy="210" r="160" fill="#FFEDB3" opacity="0.45" filter="url(#softGlow)" />
+
+  <g filter="url(#dropShadow)">
+    <!-- Stem (Chenille / Pipe Cleaner Wire) -->
+    <path d="M250,220 Q245,360 252,500" stroke="url(#stemGrad)" stroke-width="14" stroke-linecap="round" fill="none" filter="url(#fuzzy)" />
+
+    <!-- Chenille Leaves (Folded Loops) -->
+    <!-- Left Leaf -->
+    <g transform="translate(247, 340) rotate(-45)">
+      <path d="M0,0 C-20,-15 -45,-15 -55,0 C-65,15 -35,30 0,0" fill="url(#stemGrad)" filter="url(#fuzzy)" stroke="#355726" stroke-width="2" />
+      <line x1="-50" y1="0" x2="0" y2="0" stroke="#87BE6C" stroke-width="2" opacity="0.6" />
+    </g>
+
+    <!-- Right Leaf -->
+    <g transform="translate(251, 385) rotate(35)">
+      <path d="M0,0 C20,-15 45,-15 55,0 C65,15 35,30 0,0" fill="url(#stemGrad)" filter="url(#fuzzy)" stroke="#355726" stroke-width="2" />
+      <line x1="50" y1="0" x2="0" y2="0" stroke="#87BE6C" stroke-width="2" opacity="0.6" />
+    </g>
+
+    <!-- Craft Paper Bouquet Wrap -->
+    <g transform="translate(250, 470)">
+      <!-- Wrapping body -->
+      <polygon points="-55,-80 55,-80 35,70 -35,70" fill="url(#craftPaper)" stroke="#9F805B" stroke-width="1.5" />
+      <path d="M-55,-80 L0,-50 L55,-80" fill="none" stroke="#9F805B" stroke-width="1.5" />
+      <path d="M-30,-20 Q0,0 30,-20" stroke="#7A5F3F" stroke-width="1" stroke-dasharray="3,3" fill="none" />
+
+      <!-- Cute Label Pin -->
+      <rect x="-35" y="-10" width="70" height="24" rx="4" fill="#FFFDF8" stroke="#DEC49F" stroke-width="1" />
+      <text x="0" y="6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#654528" text-anchor="middle" letter-spacing="1">HANDMADE 🌻</text>
+
+      <!-- Satin Ribbon Bow -->
+      <path d="M0,40 C-25,25 -35,45 -10,48 C0,50 0,40 0,40 Z" fill="url(#ribbonGrad)" stroke="#EABFC5" stroke-width="1" />
+      <path d="M0,40 C25,25 35,45 10,48 C0,50 0,40 0,40 Z" fill="url(#ribbonGrad)" stroke="#EABFC5" stroke-width="1" />
+      <circle cx="0" cy="42" r="5" fill="#FFFFFF" stroke="#EABFC5" stroke-width="1" />
+      <path d="M-2,46 Q-12,70 -16,80" stroke="#F5D0D5" stroke-width="3.5" stroke-linecap="round" fill="none" />
+      <path d="M2,46 Q12,70 16,80" stroke="#F5D0D5" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- SUNFLOWER HEAD (Pipe Cleaner Petals in Layered Ring) -->
+    <g transform="translate(250, 200)">
+      <!-- Outer Petal Layer (14 looped petals) -->
+      <!-- Each petal is a looped fuzzy pipe cleaner shape -->
+      <g filter="url(#fuzzy)">
+        <!-- 16 Petals rotated evenly -->
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(0)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(22.5)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(45)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(67.5)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(90)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(112.5)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(135)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(157.5)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(180)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(202.5)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(225)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(247.5)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(270)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(292.5)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(315)" />
+        <path d="M-10,-45 C-18,-75 -15,-105 0,-115 C15,-105 18,-75 10,-45 Z" fill="url(#petalGrad)" stroke="#D47700" stroke-width="2" transform="rotate(337.5)" />
+      </g>
+
+      <!-- Inner Accent Loop Details (Chenille wire fold marks) -->
+      <g opacity="0.75" stroke="#FFE978" stroke-width="2" fill="none">
+        <path d="M0,-55 Q0,-80 0,-100" transform="rotate(0)" />
+        <path d="M0,-55 Q0,-80 0,-100" transform="rotate(45)" />
+        <path d="M0,-55 Q0,-80 0,-100" transform="rotate(90)" />
+        <path d="M0,-55 Q0,-80 0,-100" transform="rotate(135)" />
+        <path d="M0,-55 Q0,-80 0,-100" transform="rotate(180)" />
+        <path d="M0,-55 Q0,-80 0,-100" transform="rotate(225)" />
+        <path d="M0,-55 Q0,-80 0,-100" transform="rotate(270)" />
+        <path d="M0,-55 Q0,-80 0,-100" transform="rotate(315)" />
+      </g>
+
+      <!-- Center Brown Fuzzy Core (Pipe cleaner swirl) -->
+      <circle cx="0" cy="0" r="50" fill="url(#coreGradient)" stroke="#221002" stroke-width="4" filter="url(#fuzzy)" />
+
+      <!-- Chenille Spiral / Coil Rings -->
+      <path d="M0,0 Q-10,-10 0,-20 Q15,-20 20,-5 Q20,15 0,22 Q-25,25 -30,-5 Q-30,-30 0,-38 Q35,-40 40,-5" fill="none" stroke="#7A4517" stroke-width="5" stroke-linecap="round" filter="url(#fuzzy)" opacity="0.85" />
+      <path d="M-5,0 Q-15,-12 0,-22 Q18,-15 15,5 Q10,20 -5,18" fill="none" stroke="#A86629" stroke-width="3" stroke-linecap="round" opacity="0.9" />
+
+      <!-- Center Sparkle Highlights -->
+      <circle cx="-12" cy="-15" r="3" fill="#FFE8A3" opacity="0.6" />
+      <circle cx="15" cy="-8" r="2.5" fill="#FFE8A3" opacity="0.5" />
+      <circle cx="-5" cy="14" r="2" fill="#FFE8A3" opacity="0.5" />
+    </g>
+  </g>
+
+  <!-- Handwritten Polaroid Style Caption at Bottom -->
+  <text x="250" y="565" font-family="'Caveat', cursive" font-size="21" font-weight="700" fill="#5F432B" text-anchor="middle">
+    "dibuat helai demi helai dengan penuh cinta & doa ✨🌻"
+  </text>
+</svg>
