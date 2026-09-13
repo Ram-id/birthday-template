@@ -1,4 +1,4 @@
-# 🎂 Aesthetic Interactive Birthday Website Template ✨
+# 🎁 Platform Kado Digital Ulang Tahun Komersial (Mobile-First & Paywall Rp 15.000) ✨
 
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -6,46 +6,74 @@
 [![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Template website ucapan ulang tahun interaktif, estetik, dan sinematik yang dirancang khusus agar **mudah digunakan dan dikustomisasi oleh siapa saja** — baik oleh programmer maupun pemula (tanpa perlu koding!).
+Template website platform kado ulang tahun interaktif **berbasis mobile-first** yang dirancang khusus untuk **langsung dikomersilkan / dimonetisasi** dengan sistem **Pay-to-Share seharga Rp 15.000 per link**.
+
+Calon pembeli bisa membuat dan mencoba pratinjau kado secara gratis di ponsel mereka, lalu membayar Rp 15.000 (via QRIS / E-Wallet) ketika ingin membagikan tautan unik dan kartu QR Code kepada orang tersayang.
 
 ---
 
-## 🌟 Fitur Utama (Key Features)
+## 🌟 Fitur Utama Komersial & Mobile-First
 
-1. 🎂 **Kue Ulang Tahun & Lilin Interaktif**:
-   - Efek gores korek api dengan suara gesekan (*Web Audio API*).
-   - Animasi nyala api lilin berkedip realistis.
-   - Tiup lilin interaktif dengan jeda *make-a-wish*, kepulan asap animasi, efek fanfare ceria, dan hujan *pastel confetti*.
+1. 📱 **Tampilan Nyaman Khusus Layar HP (Mobile-First)**:
+   - Dirancang pas untuk layar smartphone (iPhone & Android). Ringan, responsif, dan nyaman digunakan dengan satu tangan.
 
-2. 💌 **Surat Kasih Berjalan (Kinetic Typography Letter)**:
-   - Kalimat demi kalimat tampil halus dan elegan saat layar disentuh atau otomatis berjalan.
-   - Tombol navigasi sebelumnya/selanjutnya + bar kemajuan (*progress bar*).
+2. 🎁 **Kado Simpel: Kupon Kasih Sayang (Virtual Love Coupons)**:
+   - Format kado yang sangat disukai pasangan muda & sahabat di media sosial (viral di TikTok/Instagram):
+     - 🍜 *Kupon Ditraktir Makanan Favorit*
+     - 🫂 *Kupon Peluk Hangat 24 Jam*
+     - 🕊️ *Kupon Bebas Ngambek 1 Hari*
+     - 🎬 *Kupon Nonton Bioskop & Jajan Popcorn*
+     - ☕ *Kupon Ngopi & Deep Talk Santai*
+     - 👑 *Kupon 1 Permintaan Rahasia Bebas*
+     - *(Bisa tambah kupon custom sendiri!)*
+   - Penerima dapat menyentuh kupon untuk **mengklaimnya secara langsung**.
 
-3. 🎁 **Ruang Kado Spesial (Virtual Gift Vault)**:
-   - 📸 **Galeri Foto Polaroid 3D**: Bingkai polaroid estetik, zoom foto (*lightbox*), dan caption manis.
-   - 🎙️ **Pesan Suara & Lagu**: Audio player visualizer gelombang suara untuk rekaman suara atau lagu ucapan.
-   - 🎬 **Video Kenangan**: Pemutar video sinematik (mendukung link YouTube atau file mp4 lokal).
-   - ✨ **Kapsul Kejutan**: Tombol membuka website atau hadiah rahasia tambahan.
+3. 🎂 **Kue Ulang Tahun & Lilin Interaktif**:
+   - Gores korek api -> nyala api realistis -> tiup lilin -> kepulan asap animasi -> ledakan confetti perayaan.
 
-4. 🎈 **Suasana Hangat & Interaktif**:
-   - Partikel debu cahaya melayang (*ambient floating motes*).
-   - Lampu gantung gemerlap (*fairy lights*).
-   - Balon melayang interaktif yang bisa diletuskan saat diklik!
+4. 💌 **Surat Ucapan Kinetik (Kinetic Letter)**:
+   - Pilihan template ucapan instan (*Romantis*, *Sahabat*, atau *Simpel*). Kalimat demi kalimat tampil elegan saat layar disentuh.
 
-5. ⚙️ **Kustomisasi Super Mudah (3 Cara)**:
-   - **Cara 1 (Tanpa Koding)**: Buka website, klik tombol **"⚙️ Kustomisasi"** di pojok kanan atas, ketik nama/pesan, lalu klik **"Salin Link Instan"**!
-   - **Cara 2 (Lewat URL Parameter)**: Cukup tambahkan parameter di link:  
-     `https://domain-kamu.vercel.app/?to=Nama&age=21&from=Pengirim`
-   - **Cara 3 (File Konfigurasi)**: Edit 1 file terpusat di `src/config/birthday.config.ts`.
+5. 💳 **Paywall Rp 15.000 (Monetisasi Siap Pakai)**:
+   - Tampilan modal pembayaran QRIS Rp 15.000 (mendukung BCA, GoPay, OVO, Dana, ShopeePay).
+   - Fitur kode promo/voucher (misal: kode `GRATIS` untuk uji coba/tester).
+   - Tombol konfirmasi transfer via WhatsApp admin.
+   - Tombol simulasi bayar instan (*sandbox*).
+   - Setelah bayar: menghasilkan **Tautan Unik Permanen** + **Kartu QR Code** siap print/kirim!
 
-6. 💬 **Tombol Balas ke WhatsApp**:
-   - Penerima dapat langsung membalas pesan terima kasih ke WhatsApp pengirim hanya dengan 1 kali klik.
+6. 🔁 **Viral Growth Loop**:
+   - Di akhir halaman penerima kado terdapat ajakan manis:  
+     *"Mau bikin kado spesial seperti ini untuk pacar/sahabatmu? Buat di sini cuma Rp 15.000 ✨"*  
+     Setiap penerima kado otomatis berpotensi menjadi pembeli baru Anda!
 
 ---
 
-## 🚀 1-Click Deploy (Sebar Link Website dalam 1 Menit)
+## ⚙️ Cara Mengatur QRIS & WhatsApp Toko Anda
 
-Kamu bisa langsung mendeploy website ini secara gratis:
+Buka file [`src/config/commercial.config.ts`](./src/config/commercial.config.ts):
+
+```typescript
+export const businessConfig = {
+  priceRupiah: 15000,
+  formattedPrice: 'Rp 15.000',
+  serviceName: 'Kado Ulang Tahun Digital Interaktif',
+  
+  // Ganti link gambar QRIS toko Anda di sini:
+  qrisImageUrl: 'https://link-ke-gambar-qris-toko-anda.png',
+  
+  // Ganti dengan nomor WhatsApp Anda (awali dengan 62):
+  adminWhatsApp: '628123456789',
+  
+  // Kode promo untuk pengujian:
+  demoPromoCode: 'GRATIS',
+};
+```
+
+---
+
+## 🚀 1-Click Deploy ke Hosting Gratis
+
+Anda bisa langsung mendeploy website ini ke internet dalam 1 menit:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Ram-id/birthday-template)
 
@@ -53,132 +81,24 @@ Kamu bisa langsung mendeploy website ini secara gratis:
 
 ---
 
-## 💻 Cara Menjalankan di Komputer Lokal (Local Development)
+## 💻 Menjalankan di Komputer Lokal
 
-### 1. Clone Repository
 ```bash
+# 1. Clone repository
 git clone https://github.com/Ram-id/birthday-template.git
 cd birthday-template
-```
 
-### 2. Install Dependensi
-```bash
+# 2. Install dependensi
 npm install
-```
 
-### 3. Jalankan Development Server
-```bash
+# 3. Jalankan server lokal
 npm run dev
 ```
-Buka browser di `http://localhost:3000` (atau port yang tertera di terminal).
-
----
-
-## 🎨 Panduan Kustomisasi (Customization Guide)
-
-### 1. Mengubah Teks & Data Melalui `src/config/birthday.config.ts`
-
-Buka file [`src/config/birthday.config.ts`](./src/config/birthday.config.ts):
-
-```typescript
-export const defaultBirthdayConfig: BirthdayConfig = {
-  recipientName: "Sarah",              // Nama yang berulang tahun
-  petName: "Sayanggg",                 // Panggilan sayang
-  senderName: "Dimas",                 // Nama kamu
-  age: 21,                             // Umur
-  birthDate: "12 September",
-  bgmUrl: "/bgm.mp3",                  // Lagu latar di folder public/
-
-  celebration: {
-    greeting: "Selamat Ulang Tahun, Manisku! 🎂✨",
-    subGreeting: "Hari ini adalah hari istimewa...",
-    // ...
-  },
-
-  letter: {
-    storyMessages: [
-      "Hari ini terasa begitu istimewa...",
-      "Satu tahun penuh perjalanan telah terlewati...",
-      "Terima kasih sudah selalu ada di sisiku 🤍",
-      // Tambahkan kalimat sesukamu di sini!
-    ],
-    signature: "Dengan segenap cinta, Dimas 🤍",
-  },
-
-  gifts: {
-    // Atur kado foto, rekaman suara, video youtube, atau tautan rahasia
-  },
-
-  whatsapp: {
-    phoneNumber: "628123456789",       // Nomor WA kamu (awali dengan 62)
-    messageTemplate: "Makasih banyakkk atas websitenya! Terharu banget... 🤍✨",
-  }
-};
-```
-
-### 2. Mengganti Foto, Lagu, dan Video Asli
-
-Cukup letakkan file kamu di dalam folder `public/`:
-- **Foto Kue**: Simpan sebagai `public/cake.jpg`
-- **Foto Polaroid**: Simpan sebagai `public/memory-1.jpg`, `public/memory-2.jpg`, `public/memory-3.jpg`
-- **Lagu Latar**: Simpan file audio sebagai `public/bgm.mp3`
-- **Voice Note / Rekaman Suara**: Simpan sebagai `public/sample-vn.mp3`
-- **Video Spesial**: Bisa menggunakan link **YouTube** di konfigurasi, atau simpan video mp4 ke `public/video.mp4`.
-
-*(Atau kamu juga bisa mengganti foto/video/audio langsung lewat tombol di website saat membukanya di browser!)*
-
----
-
-## 📂 Struktur Direktori (Project Structure)
-
-```text
-birthday-template/
-├── public/                     # Aset publik (kue, polaroid, audio, favicon)
-│   ├── bgm.mp3
-│   ├── cake.jpg
-│   ├── giftbox.jpg
-│   └── memory-1.jpg ...
-├── src/
-│   ├── config/
-│   │   └── birthday.config.ts  # ⭐️ PUSAT KONFIGURASI SEMUA DATA
-│   ├── utils/
-│   │   └── soundEffects.ts     # Generator efek suara Web Audio API
-│   ├── components/
-│   │   ├── CelebrationStage.tsx    # Babak kue & tiup lilin
-│   │   ├── FinalLoveStage.tsx      # Babak surat kinetik
-│   │   ├── GiftVaultStage.tsx      # Babak ruang kado
-│   │   ├── FloatingPetals.tsx      # Animasi partikel melayang
-│   │   ├── InteractiveBalloons.tsx # Balon interaktif
-│   │   └── modals/
-│   │       ├── PhotoMemoryModal.tsx    # Modal polaroid 3D
-│   │       ├── VoiceNoteModal.tsx      # Modal pemutar audio/VN
-│   │       ├── SpecialVideoModal.tsx   # Modal pemutar video / YouTube
-│   │       └── LiveCustomizerModal.tsx # Drawer kustomisasi instan
-│   ├── App.tsx                 # Komponen utama & pemutar musik
-│   ├── main.tsx
-│   └── index.css               # Styling Tailwind + animasi lilin
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── README.md
-```
-
----
-
-## 🛠️ Tech Stack
-
-- **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Audio**: Web Audio API (zero external sound dependencies) + HTML5 Audio
-- **Celebration Effects**: [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
+Buka di browser: `http://localhost:3000`
 
 ---
 
 ## 📄 Lisensi (License)
 
-Proyek ini dirilis di bawah lisensi [MIT](./LICENSE). Bebas digunakan, dimodifikasi, dan dibagikan untuk siapa saja yang ingin membahagiakan orang tersayang! 🌻✨
-
-Dibuat dengan segenap ketulusan oleh [Ram-id](https://github.com/Ram-id).
+Dirilis di bawah lisensi [MIT](./LICENSE). Bebas digunakan untuk komersial, disesuaikan, dan dikembangkan lebih lanjut.
+Dibuat oleh [Ram-id](https://github.com/Ram-id).
