@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
-import { MobileBuilder } from './components/builder/MobileBuilder';
-import { PaymentModal } from './components/builder/PaymentModal';
-import { MobileViewer } from './components/viewer/MobileViewer';
-import { GiftCustomData, defaultGiftCustomData } from './config/templates.config';
+import { GiftExperience } from './types/gift';
+import { defaultGiftExperiences } from './config/presets';
+import { LandingPage } from './components/landing/LandingPage';
+import { StudioEditor } from './components/studio/StudioEditor';
+import { GiftCanvas } from './components/canvas/GiftCanvas';
 import { decodeGiftData } from './utils/codec';
+import { Edit3 } from 'lucide-react';
 
 export function App() {
-  const [giftData, setGiftData] = useState<GiftCustomData>(defaultGiftCustomData);
-  const [mode, setMode] = useState<'builder' | 'viewer'>('builder');
-  const [isPaymentOpen, setIsPaymentOpen] = useState(false);
-  const [isRecipientView, setIsRecipientView] = useState(false);
+  const [giftData, setGiftData] = useState<GiftExperience>(defaultGiftExperiences.birthday);
+  const [viewMode, setViewMode] = useState<'landing' | 'studio' | 'canvas'>('landing');
+  const [isRecipientStandalone, setIsRecipientStandalone] = useState(false);
 
   // Check URL query params on mount
   useEffect(() => {
@@ -22,81 +23,71 @@ export function App() {
       const decoded = decodeGiftData(encodedGift);
       if (decoded) {
         setGiftData(decoded);
-        setMode('viewer');
-        setIsRecipientView(true);
+        setViewMode('canvas');
+        setIsRecipientStandalone(true);
         return;
       }
     }
 
-    // Fallback simple query params like ?to=Sarah&from=Dimas
-    const to = params.get('to');
-    const from = params.get('from');
-    const pet = params.get('pet');
-    const occasion = params.get('occasion');
-
-    if (to || from || pet || occasion) {
-      setGiftData((prev) => ({
-        ...prev,
-        recipientName: to || prev.recipientName,
-        senderName: from || prev.senderName,
-        petName: pet || prev.petName,
-        occasion: (occasion as any) || prev.occasion,
-      }));
-      setMode('viewer');
-      setIsRecipientView(true);
-      return;
-    }
-
-    // Check local draft
-    const saved = localStorage.getItem('draft_luxury_gift');
-    if (saved) {
+    // Check saved local draft
+    const savedDraft = localStorage.getItem('kadokasih_studio_draft');
+    if (savedDraft) {
       try {
-        const parsed = JSON.parse(saved);
-        if (parsed && parsed.recipientName) {
+        const parsed = JSON.parse(savedDraft);
+        if (parsed && (parsed.recipientName || parsed.letterTitle)) {
           setGiftData(parsed);
         }
       } catch {
-        // ignore
+        // ignore fallback
       }
     }
   }, []);
 
-  const handleDataChange = (newData: GiftCustomData) => {
+  const handleDataChange = (newData: GiftExperience) => {
     setGiftData(newData);
-    localStorage.setItem('draft_luxury_gift', JSON.stringify(newData));
+    localStorage.setItem('kadokasih_studio_draft', JSON.stringify(newData));
   };
 
-  const handlePreview = () => {
-    setMode('viewer');
-  };
-
-  const handleReturnToBuilder = () => {
-    setMode('builder');
+  const handleStartStudio = (preset: GiftExperience) => {
+    setGiftData(preset);
+    localStorage.setItem('kadokasih_studio_draft', JSON.stringify(preset));
+    setViewMode('studio');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <div className="min-h-[100dvh] w-full bg-[#EFECE6] flex justify-center items-center font-sans">
-      {mode === 'builder' ? (
-        <MobileBuilder
-          giftData={giftData}
+    <div className="min-h-screen w-full font-sans antialiased">
+      {viewMode === 'landing' && (
+        <LandingPage onStartStudio={handleStartStudio} />
+      )}
+
+      {viewMode === 'studio' && (
+        <StudioEditor
+          gift={giftData}
           onChange={handleDataChange}
-          onPreview={handlePreview}
-          onCheckout={() => setIsPaymentOpen(true)}
-        />
-      ) : (
-        <MobileViewer
-          giftData={giftData}
-          onEdit={!isRecipientView ? handleReturnToBuilder : undefined}
-          isPreview={!isRecipientView}
+          onGoToLanding={() => setViewMode('landing')}
+          onPreviewFullscreen={() => setViewMode('canvas')}
         />
       )}
 
-      {/* Paywall Modal (Rp 15.000) */}
-      <PaymentModal
-        isOpen={isPaymentOpen}
-        onClose={() => setIsPaymentOpen(false)}
-        giftData={giftData}
-      />
+      {viewMode === 'canvas' && (
+        <div className="relative min-h-screen">
+          {/* If opened as preview from studio, give option to return to Studio */}
+          {!isRecipientStandalone && (
+            <div className="fixed top-4 left-4 z-50">
+              <button
+                onClick={() => setViewMode('studio')}
+                className="px-4 py-2 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md text-white text-xs font-serif font-medium flex items-center gap-1.5 shadow-lg border border-white/20 transition cursor-pointer"
+              >
+                <Edit3 size={13} />
+                <span>Kembali ke Studio</span>
+              </button>
+            </div>
+          )}
+
+          <GiftCanvas gift={giftData} isStandalone={isRecipientStandalone} />
+        </div>
+      )}
     </div>
   );
 }
