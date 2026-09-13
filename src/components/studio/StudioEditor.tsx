@@ -236,7 +236,7 @@ export const StudioEditor: React.FC<StudioEditorProps> = ({
                     type="text"
                     value={gift.recipientName}
                     onChange={(e) => onChange({ ...gift, recipientName: e.target.value })}
-                    placeholder="e.g. Alya Putri"
+                    placeholder="e.g. Si Manis / Kekasih Hatiku"
                     className="w-full px-3.5 py-2.5 rounded-xl bg-[#FCFAF7] border border-[#EADBCE] text-[#4A2E2B] focus:outline-[#FFAAA6]"
                   />
                 </div>
@@ -248,7 +248,7 @@ export const StudioEditor: React.FC<StudioEditorProps> = ({
                       type="text"
                       value={gift.petName}
                       onChange={(e) => onChange({ ...gift, petName: e.target.value })}
-                      placeholder="e.g. Sayanggg, Cantik"
+                      placeholder="e.g. Sayangku, Teman Hidupku"
                       className="w-full px-3.5 py-2.5 rounded-xl bg-[#FCFAF7] border border-[#EADBCE] text-[#4A2E2B] focus:outline-[#FFAAA6]"
                     />
                   </div>
@@ -258,7 +258,7 @@ export const StudioEditor: React.FC<StudioEditorProps> = ({
                       type="text"
                       value={gift.senderName}
                       onChange={(e) => onChange({ ...gift, senderName: e.target.value })}
-                      placeholder="e.g. Rian Pratama"
+                      placeholder="e.g. Namamu / Seseorang yang Menyayangimu"
                       className="w-full px-3.5 py-2.5 rounded-xl bg-[#FCFAF7] border border-[#EADBCE] text-[#4A2E2B] focus:outline-[#FFAAA6]"
                     />
                   </div>

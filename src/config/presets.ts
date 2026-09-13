@@ -66,9 +66,9 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     title: 'Perayaan Ulang Tahun',
     occasion: 'birthday',
     theme: 'editorial-rose',
-    recipientName: 'Alya Putri',
-    petName: 'Sayanggg',
-    senderName: 'Rian Pratama',
+    recipientName: 'Si Manis',
+    petName: 'Sayangku',
+    senderName: 'Teman Spesialmu',
     coverTitle: 'Sebuah Persembahan Untuk Hari Bahagiamu ✨',
     coverSubtitle: 'Sebuah ruang hangat penuh doa dan kenangan yang kurangkai khusus untukmu.',
     letterTitle: 'Selamat Bertambah Usia, Manisku 🎂🤍',
@@ -78,7 +78,7 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
       'Di usiamu yang baru ini, semoga setiap langkahmu dipeluk kemudahan oleh Tuhan, senyuman manismu tidak pernah pudar, serta seluruh impian dan cita-citamu terkabul satu per satu.',
       'Terima kasih telah hadir dan mewarnai duniaku. Selamat Ulang Tahun yaa sayang! 🤍✨'
     ],
-    letterClosing: 'Dengan segenap cinta & doa tulus, Rian 🤍',
+    letterClosing: 'Dengan segenap cinta & doa tulus selamanya 🤍',
     photos: [
       {
         id: 'p1',
@@ -98,7 +98,7 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     momentDescription: 'Gores korek api, pejamkan mata sejenak, buat permohonan tulus dalam hati, lalu tiup lilinnya yaa...',
     milestoneNumber: 21,
     bgmUrl: '/bgm.mp3',
-    senderWhatsApp: '628123456789',
+    senderWhatsApp: '',
   },
 
   // 2. ANNIVERSARY
@@ -107,9 +107,9 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     title: 'Perayaan Anniversary',
     occasion: 'anniversary',
     theme: 'warm-champagne',
-    recipientName: 'Nadia Salsabila',
-    petName: 'Bidadari Mas',
-    senderName: 'Dimas Ardiansyah',
+    recipientName: 'Kekasih Hatiku',
+    petName: 'Teman Hidupku',
+    senderName: 'Pasanganmu',
     coverTitle: 'Kilas Balik Perjalanan Cinta Kita 💍',
     coverSubtitle: 'Menatap kembali hari-hari indah yang telah kita rajut bersama.',
     letterTitle: 'Happy Anniversary, Sayangku 🤍✨',
@@ -119,7 +119,7 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
       'Setiap detik bersamamu adalah bab terindah dalam hidupku yang selalu ingin kubaca berulang kali tanpa rasa bosan.',
       'Semoga cinta, kesabaran, dan ketulusan ini senantiasa bertumbuh semakin kokoh dan saling melengkapi di tahun-tahun mendatang.'
     ],
-    letterClosing: 'Selamanya milikmu dengan segenap jiwa, Dimas 🤍',
+    letterClosing: 'Selamanya milikmu dengan segenap jiwa 🤍',
     photos: [
       {
         id: 'p1',
@@ -139,7 +139,7 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     momentDescription: 'Setiap hari yang kita lalui adalah anugerah terindah yang senantiasa kurawat dengan segenap cinta.',
     milestoneNumber: 2,
     bgmUrl: '/bgm.mp3',
-    senderWhatsApp: '628123456789',
+    senderWhatsApp: '',
   },
 
   // 3. APOLOGY
@@ -148,9 +148,9 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     title: 'Surat Permintaan Maaf Tulus',
     occasion: 'apology',
     theme: 'botanical-sage',
-    recipientName: 'Kania Larasati',
-    petName: 'Sayanggg',
-    senderName: 'Bima Satria',
+    recipientName: 'Orang Baik',
+    petName: 'Sayangku',
+    senderName: 'Aku yang Menyesal',
     coverTitle: 'Dari Lubuk Hatiku yang Terdalam... 🕊️',
     coverSubtitle: 'Sebuah ungkapan penyesalan dan harapan untuk merawat kembali senyummu.',
     letterTitle: 'Maafkan Aku, Manisku... 🤍',
@@ -160,7 +160,7 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
       'Maafkan keegoisanku, maafkan kecerobohanku yang belum mampu memahamimu dengan baik saat itu.',
       'Kehadiranmu terlalu berharga untuk kubiarkan renggang oleh ego sesaat. Aku berjanji akan belajar menjadi sosok yang lebih baik dan lebih sabar untukmu.'
     ],
-    letterClosing: 'Dengan penyesalan tulus & janji berbenah, Bima 🤍',
+    letterClosing: 'Dengan penyesalan tulus & janji berbenah 🤍',
     photos: [
       {
         id: 'p1',
@@ -174,7 +174,7 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     momentDescription: 'Sentuh atau usap kotak rahasia di bawah ini untuk membaca janji dari lubuk hatiku...',
     secretMessage: 'Aku berjanji akan selalu mendengar tanpa menyela, memeluk saat kamu lelah, dan tidak akan pernah membiarkan amarah merusak kehangatan kita lagi 🤍',
     bgmUrl: '/bgm.mp3',
-    senderWhatsApp: '628123456789',
+    senderWhatsApp: '',
   },
 
   // 4. GRATITUDE
@@ -183,9 +183,9 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     title: 'Surat Apresiasi & Terima Kasih',
     occasion: 'gratitude',
     theme: 'warm-champagne',
-    recipientName: 'Bunda Tercinta',
-    petName: 'Bunda',
-    senderName: 'Anakmu Tersayang',
+    recipientName: 'Sahabat Terbaikku',
+    petName: 'Sahabatku',
+    senderName: 'Teman Baikmu',
     coverTitle: 'Terima Kasih Atas Segala Kebaikan & Ketulusanmu 💐',
     coverSubtitle: 'Sebuah ungkapan terima kasih mendalam yang seringkali tak terucap.',
     letterTitle: 'Untuk Sosok yang Selalu Menginspirasiku 💐🤍',
@@ -208,7 +208,7 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     momentTitle: 'Buket Rasa Syukur Untukmu 💐',
     momentDescription: 'Kado kecil ini adalah simbol dari rasa terima kasih yang tak terhingga atas setiap jejak kebaikanmu.',
     bgmUrl: '/bgm.mp3',
-    senderWhatsApp: '628123456789',
+    senderWhatsApp: '',
   },
 
   // 5. SURPRISE
@@ -217,9 +217,9 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     title: 'Kejutan Manis Tanpa Alasan',
     occasion: 'surprise',
     theme: 'editorial-rose',
-    recipientName: 'Clara Anindya',
-    petName: 'Princess',
-    senderName: 'Fajar Nugraha',
+    recipientName: 'Bintang Hatiku',
+    petName: 'Si Manis',
+    senderName: 'Pengagum Rahasiamu',
     coverTitle: 'Hanya Ingin Mengingatkan Betapa Berharganya Dirimu ✨',
     coverSubtitle: 'Sebuah kejutan kecil di hari biasa untuk mengukir senyuman di wajahmu.',
     letterTitle: 'Sebuah Surat Manis Untukmu ✨🤍',
@@ -229,7 +229,7 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
       'Aku hanya ingin kamu tahu, bahwa di tengah riuh dan lelahnya kesibukanmu, ada aku yang selalu bangga dan mengagumi kerja keras serta ketulusanmu.',
       'Tetaplah bersinar dengan caramu sendiri, jaga kesehatanmu, dan jangan lupa tersenyum manis hari ini yaa!'
     ],
-    letterClosing: 'Dari seseorang yang selalu menyayangimu, Fajar 🤍',
+    letterClosing: 'Dari seseorang yang selalu mengagumimu 🤍',
     photos: [
       {
         id: 'p1',
@@ -243,6 +243,6 @@ export const defaultGiftExperiences: Record<OccasionType, GiftExperience> = {
     momentDescription: 'Sentuh kotak misteri ini untuk membuka pesan kejutan rahasia khusus untukmu...',
     secretMessage: 'Weekend ini, luangkan waktumu yaa... Aku sudah menyiapkan kencan kejutan spesial ke tempat yang paling ingin kamu kunjungi! 🎬🍿✨',
     bgmUrl: '/bgm.mp3',
-    senderWhatsApp: '628123456789',
+    senderWhatsApp: '',
   },
 };

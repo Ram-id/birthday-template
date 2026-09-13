@@ -311,10 +311,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onStartStudio }) => {
                   className="py-12 px-6 flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#FDFBF7] to-[#F7ECE4] rounded-2xl border border-[#F0DFD5]"
                 >
                   <div className="w-20 h-20 rounded-full bg-[#8A3324] text-white flex items-center justify-center shadow-lg mb-4 ring-8 ring-[#8A3324]/10">
-                    <span className="font-serif text-2xl font-bold tracking-widest">AK</span>
+                    <span className="font-serif text-2xl font-bold tracking-widest">SM</span>
                   </div>
                   <h3 className="font-serif text-2xl text-[#2E1917] mb-2 font-normal">
-                    Sebuah Surat Khusus Untuk Alya Putri ✨
+                    Sebuah Surat Khusus Untuk Si Manis ✨
                   </h3>
                   <p className="text-sm text-[#7A615D] max-w-md font-light mb-5">
                     "Ada ruang hangat yang kurangkai khusus untuk merayakan hari bahagiamu..."
@@ -337,7 +337,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onStartStudio }) => {
                   <div className="max-w-xl mx-auto space-y-4">
                     <div className="flex items-center justify-between text-xs text-[#8A3324] font-medium tracking-widest uppercase pb-3 border-b border-[#EFE4DA]">
                       <span>Surat Cinta Kasih</span>
-                      <span>Untuk: Alya Putri 🤍</span>
+                      <span>Untuk: Si Manis 🤍</span>
                     </div>
                     <h3 className="font-serif text-2xl text-[#2C1816]">
                       Selamat Bertambah Usia, Manisku 🎂✨
@@ -611,8 +611,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onStartStudio }) => {
                 </p>
               </div>
               <div className="border-t border-[#F2E5DB] pt-3 text-xs">
-                <p className="font-medium text-[#2E1917]">Raisa & Kevin</p>
-                <p className="text-[#846864] font-light">Hubungan Jarak Jauh (LDR)</p>
+                <p className="font-medium text-[#2E1917]">Pasangan LDR</p>
+                <p className="text-[#846864] font-light">Kado Ulang Tahun Spesial</p>
               </div>
             </div>
 
@@ -624,12 +624,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onStartStudio }) => {
                   ))}
                 </div>
                 <p className="font-serif italic text-sm text-[#46312E] leading-relaxed mb-4">
-                  "Template Anniversary-nya cakep pol! Ada penghitung hari milestone yang bikin kita nostalgia bareng. Desainnya mewah nggak kayak web abal-abal."
+                  "Template Anniversary-nya cakep pol! Ada penghitung hari milestone yang bikin kita nostalgia bareng. Desainnya mewah dan menyentuh hati."
                 </p>
               </div>
               <div className="border-t border-[#F2E5DB] pt-3 text-xs">
-                <p className="font-medium text-[#2E1917]">Dimas & Nadia</p>
-                <p className="text-[#846864] font-light">Anniversary ke-2</p>
+                <p className="font-medium text-[#2E1917]">Pasangan Anniversary</p>
+                <p className="text-[#846864] font-light">Merayakan 2 Tahun Bersama</p>
               </div>
             </div>
 
@@ -645,7 +645,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onStartStudio }) => {
                 </p>
               </div>
               <div className="border-t border-[#F2E5DB] pt-3 text-xs">
-                <p className="font-medium text-[#2E1917]">Farhan M.</p>
+                <p className="font-medium text-[#2E1917]">Pengguna KadoKasih</p>
                 <p className="text-[#846864] font-light">Ungkapan Maaf & Janji</p>
               </div>
             </div>
