@@ -1,4 +1,4 @@
-# 🎁 Platform Kado Digital Ulang Tahun Komersial (Mobile-First & Paywall Rp 15.000) ✨
+# 🌹 Platform Kado & Kartu Digital "Editorial Romance" (Multi-Momen & Paywall Rp 15.000) ✨
 
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -6,74 +6,88 @@
 [![Vite](https://img.shields.io/badge/Vite-6.1-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Template website platform kado ulang tahun interaktif **berbasis mobile-first** yang dirancang khusus untuk **langsung dikomersilkan / dimonetisasi** dengan sistem **Pay-to-Share seharga Rp 15.000 per link**.
+Platform kartu ucapan dan kado digital interaktif berkelas **Elegan, Romantis, dan Sinematik** (*Editorial Luxury Aesthetic*). Dibuat khusus untuk kenyamanan layar ponsel (*mobile-first*) dan siap dikomersilkan dengan skema **Pay-to-Share seharga Rp 15.000 per link**.
 
-Calon pembeli bisa membuat dan mencoba pratinjau kado secara gratis di ponsel mereka, lalu membayar Rp 15.000 (via QRIS / E-Wallet) ketika ingin membagikan tautan unik dan kartu QR Code kepada orang tersayang.
-
----
-
-## 🌟 Fitur Utama Komersial & Mobile-First
-
-1. 📱 **Tampilan Nyaman Khusus Layar HP (Mobile-First)**:
-   - Dirancang pas untuk layar smartphone (iPhone & Android). Ringan, responsif, dan nyaman digunakan dengan satu tangan.
-
-2. 🎁 **Kado Simpel: Kupon Kasih Sayang (Virtual Love Coupons)**:
-   - Format kado yang sangat disukai pasangan muda & sahabat di media sosial (viral di TikTok/Instagram):
-     - 🍜 *Kupon Ditraktir Makanan Favorit*
-     - 🫂 *Kupon Peluk Hangat 24 Jam*
-     - 🕊️ *Kupon Bebas Ngambek 1 Hari*
-     - 🎬 *Kupon Nonton Bioskop & Jajan Popcorn*
-     - ☕ *Kupon Ngopi & Deep Talk Santai*
-     - 👑 *Kupon 1 Permintaan Rahasia Bebas*
-     - *(Bisa tambah kupon custom sendiri!)*
-   - Penerima dapat menyentuh kupon untuk **mengklaimnya secara langsung**.
-
-3. 🎂 **Kue Ulang Tahun & Lilin Interaktif**:
-   - Gores korek api -> nyala api realistis -> tiup lilin -> kepulan asap animasi -> ledakan confetti perayaan.
-
-4. 💌 **Surat Ucapan Kinetik (Kinetic Letter)**:
-   - Pilihan template ucapan instan (*Romantis*, *Sahabat*, atau *Simpel*). Kalimat demi kalimat tampil elegan saat layar disentuh.
-
-5. 💳 **Paywall Rp 15.000 (Monetisasi Siap Pakai)**:
-   - Tampilan modal pembayaran QRIS Rp 15.000 (mendukung BCA, GoPay, OVO, Dana, ShopeePay).
-   - Fitur kode promo/voucher (misal: kode `GRATIS` untuk uji coba/tester).
-   - Tombol konfirmasi transfer via WhatsApp admin.
-   - Tombol simulasi bayar instan (*sandbox*).
-   - Setelah bayar: menghasilkan **Tautan Unik Permanen** + **Kartu QR Code** siap print/kirim!
-
-6. 🔁 **Viral Growth Loop**:
-   - Di akhir halaman penerima kado terdapat ajakan manis:  
-     *"Mau bikin kado spesial seperti ini untuk pacar/sahabatmu? Buat di sini cuma Rp 15.000 ✨"*  
-     Setiap penerima kado otomatis berpotensi menjadi pembeli baru Anda!
+Calon pembeli dapat memilih momen, mempersonalisasi nama, memilih kupon kado romantis, dan mencoba pratinjau gratis di ponsel mereka sebelum melakukan pembayaran via QRIS.
 
 ---
 
-## ⚙️ Cara Mengatur QRIS & WhatsApp Toko Anda
+## 🌟 5 Template Momen Siap Pakai (Multi-Occasion)
 
-Buka file [`src/config/commercial.config.ts`](./src/config/commercial.config.ts):
+Pengguna dapat memilih salah satu dari 5 template momen ini dengan 1 klik:
+
+1. 🎂 **Perayaan Ulang Tahun (Birthday)**:
+   - Kue bertekstur anggun, nyala lilin realistis, tiupan lilin dengan kepulan asap animasi, dan hujan konfeti pastel emas.
+   - *Kupon bawaan*: Ditraktir Makanan Favorit, Peluk Hangat 24 Jam, Kencan Bebas Pilih, Bebas Ngambek.
+
+2. 💍 **Perayaan Anniversary (Hari Jadi / Hubungan)**:
+   - Penghitung milestone ("Tahun Ke-2 Bersamamu"), kilas balik perjalanan cinta, dan surat cinta mendalam.
+   - *Kupon bawaan*: Candlelight Dinner Berdua, Bebas Ngambek Tanpa Syarat, 1 Permintaan Bebas, Staycation Santai.
+
+3. 🥺 **Surat Permintaan Maaf (Apology / I'm Sorry)**:
+   - Amplop ketulusan beraksen lembut, kata-kata penyesalan tulus dari hati, dan janji berbenah.
+   - *Kupon bawaan*: Berdamai & Baikan Seketika, Traktir Es Krim Penenang, Mendengarkan Tanpa Membantah, Peluk Erat Minta Maaf.
+
+4. 💐 **Ucapan Terima Kasih (Gratitude / Thank You)**:
+   - Buket apresiasi virtual dan kartu tanda terima kasih yang menghangatkan hati.
+   - *Kupon bawaan*: Traktir Kopi & Camilan Sore, Bantuan Siap Siaga Kapan Saja, Traktir Makan Siang Enak.
+
+5. ✨ **Kejutan Manis Tanpa Alasan (Surprise / Just Because)**:
+   - Kotak misteri berpita emas interaktif, surat cinta rahasia, dan voucher kejutan tak terduga.
+   - *Kupon bawaan*: 1 Permintaan Rahasia Bebas, Jalan Sore & Es Krim, Teman Ngobrol 24 Jam Penuh.
+
+---
+
+## 🎨 Keunggulan UI/UX "Editorial Romance"
+
+- **Palet Warna Elegan**: *Champagne Warm Cream, Blush Rose, Deep Wine/Espresso, dan Golden Amber Glow*.
+- **Tipografi Klasik**: Kombinasi anggun antara serif puitis (*Playfair Display*, *Cormorant Garamond*) dan sans modern (*Plus Jakarta Sans*).
+- **Segel Lilin Monogram (*Wax Seal*)**: Sentuh segel lilin untuk membuka amplop surat dengan suara denting melodi.
+- **Kupon Tiket Vintage**: Tiket kupon bergradasi hangat yang dapat disentuh untuk diklaim langsung dengan stempel *"TERKLAIM (Siap Ditagih!)"*.
+- **Surat Kinetik Mengharukan**: Setiap baris kalimat muncul halus saat layar disentuh.
+
+---
+
+## 💳 Cara Kerja Monetisasi (Paywall Rp 15.000)
+
+1. Pengguna membuka website dan mendesain kado di **Studio Mobile** (Gratis).
+2. Pengguna menekan tombol **"Bungkus Kado (Rp 15.000) ✨"**:
+   - Tampil modal checkout QRIS Rp 15.000 (mendukung BCA, GoPay, OVO, Dana, ShopeePay).
+   - Tersedia tombol konfirmasi WhatsApp admin dan input kode promo (kode tester: `GRATIS`).
+3. Setelah terkonfirmasi:
+   - Sistem menghasilkan **Tautan Kado Unik Permanen**.
+   - Sistem membuat **Kartu Undangan QR Code Digital** siap kirim ke WhatsApp doi atau diprint.
+4. **Tanpa Biaya Database Cloud (Rp 0 Server Cost)**:
+   - Data kado di-encode secara aman ke URL parameter (`codec.ts`), sehingga link kado aktif selamanya tanpa biaya sewa database bulanan!
+5. **Viral Growth Loop**:
+   - Di bagian akhir halaman penerima, terdapat tombol ajakan membuat kado serupa, sehingga setiap penerima kado otomatis berpotensi menjadi pembeli baru Anda.
+
+---
+
+## ⚙️ Cara Mengatur QRIS & WhatsApp Admin Toko Anda
+
+Buka file [`src/config/templates.config.ts`](./src/config/templates.config.ts):
 
 ```typescript
-export const businessConfig = {
+export const platformCommerce = {
   priceRupiah: 15000,
   formattedPrice: 'Rp 15.000',
-  serviceName: 'Kado Ulang Tahun Digital Interaktif',
+  serviceName: 'Kado & Kartu Digital Interaktif Eksklusif',
   
-  // Ganti link gambar QRIS toko Anda di sini:
+  // Ganti URL gambar QRIS toko Anda di sini:
   qrisImageUrl: 'https://link-ke-gambar-qris-toko-anda.png',
   
   // Ganti dengan nomor WhatsApp Anda (awali dengan 62):
   adminWhatsApp: '628123456789',
   
-  // Kode promo untuk pengujian:
+  // Kode voucher promo untuk uji coba:
   demoPromoCode: 'GRATIS',
 };
 ```
 
 ---
 
-## 🚀 1-Click Deploy ke Hosting Gratis
-
-Anda bisa langsung mendeploy website ini ke internet dalam 1 menit:
+## 🚀 1-Click Deploy Gratis
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Ram-id/birthday-template)
 
@@ -84,21 +98,15 @@ Anda bisa langsung mendeploy website ini ke internet dalam 1 menit:
 ## 💻 Menjalankan di Komputer Lokal
 
 ```bash
-# 1. Clone repository
 git clone https://github.com/Ram-id/birthday-template.git
 cd birthday-template
-
-# 2. Install dependensi
 npm install
-
-# 3. Jalankan server lokal
 npm run dev
 ```
-Buka di browser: `http://localhost:3000`
+Buka browser di: `http://localhost:3000`
 
 ---
 
 ## 📄 Lisensi (License)
 
-Dirilis di bawah lisensi [MIT](./LICENSE). Bebas digunakan untuk komersial, disesuaikan, dan dikembangkan lebih lanjut.
-Dibuat oleh [Ram-id](https://github.com/Ram-id).
+Dirilis di bawah lisensi [MIT](./LICENSE). Dibuat dengan segenap ketulusan oleh [Ram-id](https://github.com/Ram-id).

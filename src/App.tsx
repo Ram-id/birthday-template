@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import { MobileBuilder } from './components/builder/MobileBuilder';
 import { PaymentModal } from './components/builder/PaymentModal';
 import { MobileViewer } from './components/viewer/MobileViewer';
-import { CommercialGiftData, defaultCommercialGift } from './config/commercial.config';
+import { GiftCustomData, defaultGiftCustomData } from './config/templates.config';
 import { decodeGiftData } from './utils/codec';
 
 export function App() {
-  const [giftData, setGiftData] = useState<CommercialGiftData>(defaultCommercialGift);
+  const [giftData, setGiftData] = useState<GiftCustomData>(defaultGiftCustomData);
   const [mode, setMode] = useState<'builder' | 'viewer'>('builder');
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
   const [isRecipientView, setIsRecipientView] = useState(false);
@@ -28,19 +28,19 @@ export function App() {
       }
     }
 
-    // Fallback: simple query params like ?to=Alya&from=Rian&age=21
+    // Fallback simple query params like ?to=Sarah&from=Dimas
     const to = params.get('to');
     const from = params.get('from');
-    const age = params.get('age');
     const pet = params.get('pet');
+    const occasion = params.get('occasion');
 
-    if (to || from || age || pet) {
+    if (to || from || pet || occasion) {
       setGiftData((prev) => ({
         ...prev,
         recipientName: to || prev.recipientName,
         senderName: from || prev.senderName,
-        age: age ? parseInt(age) || prev.age : prev.age,
         petName: pet || prev.petName,
+        occasion: (occasion as any) || prev.occasion,
       }));
       setMode('viewer');
       setIsRecipientView(true);
@@ -48,7 +48,7 @@ export function App() {
     }
 
     // Check local draft
-    const saved = localStorage.getItem('draft_commercial_gift');
+    const saved = localStorage.getItem('draft_luxury_gift');
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
@@ -61,9 +61,9 @@ export function App() {
     }
   }, []);
 
-  const handleDataChange = (newData: CommercialGiftData) => {
+  const handleDataChange = (newData: GiftCustomData) => {
     setGiftData(newData);
-    localStorage.setItem('draft_commercial_gift', JSON.stringify(newData));
+    localStorage.setItem('draft_luxury_gift', JSON.stringify(newData));
   };
 
   const handlePreview = () => {
@@ -75,7 +75,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-[100dvh] w-full bg-[#F5F2EB] flex justify-center items-center">
+    <div className="min-h-[100dvh] w-full bg-[#EFECE6] flex justify-center items-center font-sans">
       {mode === 'builder' ? (
         <MobileBuilder
           giftData={giftData}

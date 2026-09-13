@@ -1,14 +1,13 @@
-import { CommercialGiftData, defaultCommercialGift } from '../config/commercial.config';
+import { GiftCustomData, defaultGiftCustomData } from '../config/templates.config';
 
 /**
  * URL-Safe Unicode Base64 Encoder & Decoder
  * Mengemas data kustomisasi kado ke dalam URL parameter yang bisa dibuka selamanya tanpa database!
  */
 
-export function encodeGiftData(data: CommercialGiftData): string {
+export function encodeGiftData(data: GiftCustomData): string {
   try {
     const jsonStr = JSON.stringify(data);
-    // encodeURIComponent + unescape ensures proper UTF-8 handling for emoji & non-latin chars
     const base64 = btoa(encodeURIComponent(jsonStr).replace(/%([0-9A-F]{2})/g, (_, p1) => {
       return String.fromCharCode(parseInt(p1, 16));
     }));
@@ -19,7 +18,7 @@ export function encodeGiftData(data: CommercialGiftData): string {
   }
 }
 
-export function decodeGiftData(encodedStr: string): CommercialGiftData | null {
+export function decodeGiftData(encodedStr: string): GiftCustomData | null {
   try {
     const rawBase64 = decodeURIComponent(encodedStr);
     const decodedStr = decodeURIComponent(
@@ -30,9 +29,9 @@ export function decodeGiftData(encodedStr: string): CommercialGiftData | null {
         .join('')
     );
     const parsed = JSON.parse(decodedStr);
-    if (parsed && parsed.recipientName) {
+    if (parsed && (parsed.recipientName || parsed.occasion)) {
       return {
-        ...defaultCommercialGift,
+        ...defaultGiftCustomData,
         ...parsed,
       };
     }
